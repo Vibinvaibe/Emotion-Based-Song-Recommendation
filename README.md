@@ -10,7 +10,7 @@ This repo uses the Spotify API and gives us recommendation based on our emotions
 - Valence 
 - Energy 
 - Danceability
-- 
+  
 ## Functionality has been broken down into 3 parts
 1. Mood-based Music Feature Extraction
 2. Mood-Based Song Recommender with Spotify API and GUI
