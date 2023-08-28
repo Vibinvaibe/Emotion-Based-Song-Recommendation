@@ -15,10 +15,7 @@ This repo uses the Spotify API and gives us recommendation based on our emotions
 1. Mood-based Music Feature Extraction
 2. Mood-Based Song Recommender with Spotify API and GUI
 3. Spotify Playlist Creator
-   
-# Mood-based Music Feature Extraction
 
-This script uses the Spotify API (Spotipy) to extract audio features from tracks in different mood-related playlists. The audio features are used to analyze the mood characteristics of the music. The extracted features include loudness, speechiness, acousticness, instrumentalness, liveness, tempo, valence, energy, and danceability.
 
 ## Requirements
 
@@ -31,9 +28,16 @@ Make sure you have the following installed:
 
 ## Setup
 
-1. Replace `your_client_id` and `your_secret_id` with your actual Spotify API credentials.
-2. Set up the desired scopes and redirect URI in the `SCOPE` and `REDIRECT_URI` variables.
-3. Run the script in a Python environment that has the required libraries.
+1. **Create a Spotify Developer Account:** Register an application on the [Spotify Developer Dashboard](https://developer.spotify.com/dashboard/) to obtain your `CLIENT_ID` and `CLIENT_SECRET`.
+2.**Configure Redirect URI:** In the code, configure the `REDIRECT_URI` variable. Make sure it matches the redirect URI you provided when registering your Spotify application.
+3. Replace `your_client_id` and `your_secret_id` with your actual Spotify API credentials.
+4. Set up the desired scopes and redirect URI in the `SCOPE` and `REDIRECT_URI` variables.
+5. Run the script in a Python environment that has the required libraries.
+
+# Mood-based Music Feature Extraction
+
+This script uses the Spotify API (Spotipy) to extract audio features from tracks in different mood-related playlists. The audio features are used to analyze the mood characteristics of the music. The extracted features include loudness, speechiness, acousticness, instrumentalness, liveness, tempo, valence, energy, and danceability.
+
 
 ## Features Extraction
 
@@ -69,10 +73,6 @@ The script includes a dictionary of mood-related features extracted from various
 
 Please note that the ranges and mood classifications are based on the specific playlists and tracks used for feature extraction. They might not be representative of all songs within a given mood category.
 
-## References
-
-- Spotify Developer Dashboard: [Link](https://developer.spotify.com/dashboard/applications)
-- Spotipy Documentation: [Link](https://spotipy.readthedocs.io/en/2.19.0/)
 
 # Mood-Based Song Recommender with Spotify API and GUI
 
@@ -87,12 +87,6 @@ This Python application allows you to search for songs based on mood and optiona
 - User-friendly GUI: The application features a graphical user interface that simplifies user interaction.
 - Spotify integration: The application uses the Spotipy library to authenticate and fetch audio features from the Spotify API.
 
-
-## Setup
-
-1. **Create a Spotify Developer Account:** Register an application on the [Spotify Developer Dashboard](https://developer.spotify.com/dashboard/) to obtain your `CLIENT_ID` and `CLIENT_SECRET`.
-
-2. **Configure Redirect URI:** In the code, configure the `REDIRECT_URI` variable. Make sure it matches the redirect URI you provided when registering your Spotify application.
 
 ## Usage
 
@@ -113,7 +107,6 @@ This application is for educational and personal use only. It interacts with the
 This Python script uses the Spotipy library to create a new public Spotify playlist and populate it with songs based on the titles provided in a text file.
 
 ## Prerequisites
-
 
 - Prepare a text file (e.g., `songs.txt`) with a list of song titles, each on a separate line.
 
@@ -136,3 +129,8 @@ Open the script (create_playlist.py) and replace the following placeholders with
 - The creation of the mood-based song recommender application, which includes a user-friendly GUI, was made possible by combining Python programming with the Spotipy library. We extend our gratitude to the Spotipy library for its role in enabling seamless integration with the Spotify API.
   
 - The implementation of the Spotify playlist creation script relied on Python and the Spotipy library. We are grateful for the Spotipy library's capabilities that allowed us to efficiently interact with the Spotify API and automate the process of playlist creation.
+
+## References
+
+- Spotify Developer Dashboard: [Link](https://developer.spotify.com/dashboard/applications)
+- Spotipy Documentation: [Link](https://spotipy.readthedocs.io/en/2.19.0/)
