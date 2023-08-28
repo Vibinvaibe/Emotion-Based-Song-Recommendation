@@ -56,3 +56,33 @@ Please note that the ranges and mood classifications are based on the specific p
 
 - Spotify Developer Dashboard: [Link](https://developer.spotify.com/dashboard/applications)
 - Spotipy Documentation: [Link](https://spotipy.readthedocs.io/en/2.19.0/)
+
+- # Mood-Based Song Recommender with Spotify API and GUI
+
+## Overview
+
+This Python application allows you to search for songs based on mood and optionally, the year. It uses the Spotify API to fetch audio features of tracks and match them against predefined mood feature ranges. The user can interact with the application using a graphical user interface (GUI).
+
+## Features
+
+- Mood-based song recommendation: The application matches tracks with predefined mood feature ranges and recommends songs that match the selected mood.
+- Optional year selection: You can specify a specific year or allow the application to randomly select one for you.
+- User-friendly GUI: The application features a graphical user interface that simplifies user interaction.
+- Spotify integration: The application uses the Spotipy library to authenticate and fetch audio features from the Spotify API.
+
+## Requirements
+
+- Python 3.x
+- Spotipy library (install using `pip install spotipy`)
+- CustomTkinter library (install according to provided instructions)
+
+## Setup
+
+1. Clone or download this repository to your local machine.
+
+2. Install the required libraries by running the following commands in your terminal:
+
+   ```bash
+   pip install spotipy
+   # Install CustomTkinter (provide installation instructions if applicable)
+
